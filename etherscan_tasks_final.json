@@ -1,0 +1,74 @@
+[
+    {
+        "action": "fetch_transactions",
+        "address": "0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a",
+        "output_prefix": "coin_01_0x23878914EFE38d27C4D67Ab83ed1b93A74D4086a",
+        "offset": 100
+    },
+    {
+        "action": "fetch_transactions",
+        "address": "0x4C6dD9d463d57C35e3B24437C1A3953929211A5C",
+        "output_prefix": "coin_02_0x4C6dD9d463d57C35e3B24437C1A3953929211A5C",
+        "offset": 100
+    },
+    {
+        "action": "fetch_transactions",
+        "address": "0x4C6dfa353B67832a23d26E17b0737819C624437C",
+        "output_prefix": "coin_03_0x4C6dfa353B67832a23d26E17b0737819C624437C",
+        "offset": 100
+    },
+    {
+        "action": "fetch_transactions",
+        "address": "0x4d5F47FA6A74757f35C14fD3a6Ef8E3C9BC514E8",
+        "output_prefix": "coin_04_0x4d5F47FA6A74757f35C14fD3a6Ef8E3C9BC514E8",
+        "offset": 100
+    },
+    {
+        "action": "fetch_transactions",
+        "address": "0x5959e94661E1203e0c8Ef84095A7846bacc6A94F",
+        "output_prefix": "coin_05_0x5959e94661E1203e0c8Ef84095A7846bacc6A94F",
+        "offset": 100
+    },
+    {
+        "action": "fetch_transactions",
+        "address": "0x666A1B2d8AB8999B3f16551991017C99070cFc32",
+        "output_prefix": "coin_06_0x666A1B2d8AB8999B3f16551991017C99070cFc32",
+        "offset": 100
+    },
+    {
+        "action": "fetch_transactions",
+        "address": "0x666Acd390FA42d5bf86e9C42dc2FA6f6b4B2d8AB",
+        "output_prefix": "coin_07_0x666Acd390FA42d5bf86e9C42dc2FA6f6b4B2d8AB",
+        "offset": 100
+    },
+    {
+        "action": "fetch_transactions",
+        "address": "0x92d3447e956613ee066ad5b4077a8c6e66424d5d",
+        "output_prefix": "coin_08_0x92d3447e956613ee066ad5b4077a8c6e66424d5d",
+        "offset": 100
+    },
+    {
+        "action": "fetch_transactions",
+        "address": "0xd86830e9c56785e2b703eb0029ae71a943e4d442",
+        "output_prefix": "coin_09_0xd86830e9c56785e2b703eb0029ae71a943e4d442",
+        "offset": 100
+    },
+    {
+        "action": "fetch_transactions",
+        "address": "0xdBBE8833C6359CFB287447eD3066e697F9C15E49",
+        "output_prefix": "coin_10_0xdBBE8833C6359CFB287447eD3066e697F9C15E49",
+        "offset": 100
+    },
+    {
+        "action": "fetch_transactions",
+        "address": "0xe778fd9a8d074e4a808092896b33fe3d3452c125",
+        "output_prefix": "coin_11_0xe778fd9a8d074e4a808092896b33fe3d3452c125",
+        "offset": 100
+    },
+    {
+        "action": "fetch_transactions",
+        "address": "0xf816507e690f5aa4e29d164885eb5fa7a5627860",
+        "output_prefix": "coin_12_0xf816507e690f5aa4e29d164885eb5fa7a5627860",
+        "offset": 100
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "action": "fetch_transactions",
+        "address": "0x1234567890abcdef1234567890abcdef12345678",
+        "output_prefix": "MemeCoinAlpha_txs"
+    },
+    {
+        "action": "fetch_token_holders",
+        "contract_address": "0xabcdef1234567890abcdef1234567890abcdef12",
+        "output_prefix": "MemeCoinAlpha_holders"
+    },
+    {
+        "action": "fetch_transactions",
+        "address": "0xaaaaaaaaaabbbbbbbbbbccccccccccdddddddddd",
+        "output_prefix": "ShibaInuKiller_txs"
+    },
+    {
+        "action": "fetch_token_holders",
+        "contract_address": "0xbbbbbbbbbbccccccccccddddddddddeeeeeeeeee",
+        "output_prefix": "ShibaInuKiller_holders"
+    },
+    {
+        "action": "fetch_transactions",
+        "address": "0x1111111111222222222233333333334444444444",
+        "output_prefix": "MoonRocketCoin_txs"
+    },
+    {
+        "action": "fetch_token_holders",
+        "contract_address": "0x2222222222333333333344444444445555555555",
+        "output_prefix": "MoonRocketCoin_holders"
+    }
+]
