@@ -1,0 +1,28 @@
+{
+    "address": "0xTargetAddress",
+    "features": {
+        "address": "0xtargetaddress",
+        "total_transactions": 3,
+        "start_time": "2020-09-13 12:26:40",
+        "end_time": "2020-09-13 13:00:00",
+        "duration_hours": 0.56,
+        "incoming_tx_count": 2,
+        "outgoing_tx_count": 1,
+        "total_eth_volume_in": 3.0,
+        "total_eth_volume_out": 0.5,
+        "avg_eth_tx_value_in": 1.5,
+        "avg_eth_tx_value_out": 0.5,
+        "max_eth_tx_value_in": 2.0,
+        "max_eth_tx_value_out": 0.5,
+        "unique_counterparties_in": 2,
+        "unique_counterparties_out": 1,
+        "total_gas_fee_eth_spent_by_address": 0.00126,
+        "avg_gas_fee_eth_spent_by_address": 0.00126,
+        "tx_per_hour": 5.3999999999999995,
+        "incoming_tx_per_hour": 3.5999999999999996,
+        "outgoing_tx_per_hour": 1.7999999999999998
+    },
+    "anomalies_detected": [
+        "No basic anomalies detected based on current rules for this dataset."
+    ]
+}

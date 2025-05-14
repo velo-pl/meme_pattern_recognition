@@ -1,0 +1,13 @@
+{
+    "project_identifier": "sample_token_project",
+    "detailed_flags": {
+        "team_anonymous_flag": false,
+        "whitepaper_missing_flag": true,
+        "roadmap_unclear_flag": false,
+        "token_concentration_analysis": "High concentration: Top 10 holders own 100.00% of the analyzed supply."
+    },
+    "active_flags_summary": [
+        "whitepaper_missing_flag",
+        "token_concentration_analysis: High concentration: Top 10 holders own 100.00% of the analyzed supply."
+    ]
+}

@@ -1,0 +1,7 @@
+{
+    "scraped_website_content": {
+        "cleaned_scraped_text_content": "This is a sample website text. Our team is great and we have a roadmap.",
+        "url": "http://example.com"
+    },
+    "token_holder_data": [{"TokenHolderAddress":"0xAlice000000000000000000000000000000000000","TokenHolderQuantity":"500000000000000000000000"},{"TokenHolderAddress":"0xBob0000000000000000000000000000000000000","TokenHolderQuantity":"300000000000000000000000"},{"TokenHolderAddress":"0xCharlie000000000000000000000000000000000","TokenHolderQuantity":"100000000000000000000000"},{"TokenHolderAddress":"0xDavid00000000000000000000000000000000000","TokenHolderQuantity":"50000000000000000000000"},{"TokenHolderAddress":"0xEve0000000000000000000000000000000000000","TokenHolderQuantity":"50000000000000000000000"}]
+}

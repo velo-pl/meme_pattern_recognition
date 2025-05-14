@@ -1,0 +1,17 @@
+{
+    "address": "0x1234567890abcdef1234567890abcdef12345678",
+    "parameters": {
+        "window_hours": 24,
+        "step_hours": 6
+    },
+    "analysis_windows": [
+        {
+            "window_start": "N/A",
+            "window_end": "N/A",
+            "features": {},
+            "anomalies_detected_in_window": [
+                "No relevant activity for address to analyze."
+            ]
+        }
+    ]
+}

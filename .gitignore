@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*build*/
+*dist*/
+*.egg-info/
+
+# Virtual environments
+.env
+.venv
+venv/
+env/
+ENV/
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# IDE / Editor specific
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Operating System files
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Uploads (if not part of the project itself)
+/home/ubuntu/upload/*
+!/home/ubuntu/upload/.recovery/
+
+# Sensitive files
+*.env.*
+!*.env.example
+secrets.txt
+credentials.json
+*.pem
+*.key
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+

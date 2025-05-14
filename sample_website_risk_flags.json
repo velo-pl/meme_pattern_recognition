@@ -1,0 +1,13 @@
+{
+    "project_identifier": "ExampleCoin",
+    "detailed_flags": {
+        "team_anonymous_flag": true,
+        "whitepaper_missing_flag": true,
+        "roadmap_unclear_flag": true
+    },
+    "active_flags_summary": [
+        "team_anonymous_flag",
+        "whitepaper_missing_flag",
+        "roadmap_unclear_flag"
+    ]
+}

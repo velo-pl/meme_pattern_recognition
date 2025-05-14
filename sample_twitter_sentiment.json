@@ -1,0 +1,26 @@
+[
+    {
+        "id_str": "12345",
+        "full_text": "This #SomeCoin is amazing! To the moon!",
+        "user": {
+            "screen_name": "CryptoFan1"
+        },
+        "cleaned_full_text": "this somecoin is amazing! to the moon!",
+        "sentiment_analysis": {
+            "label": "POSITIVE",
+            "score": 0.9998849630355835
+        }
+    },
+    {
+        "id_str": "67890",
+        "full_text": "I am not sure about $SomeCoin, looks a bit risky.",
+        "user": {
+            "screen_name": "SkepticalTrader"
+        },
+        "cleaned_full_text": "i am not sure about somecoin, looks a bit risky.",
+        "sentiment_analysis": {
+            "label": "NEGATIVE",
+            "score": 0.999337375164032
+        }
+    }
+]
