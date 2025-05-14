@@ -1,0 +1,66 @@
+services:
+  # PostgreSQL Database
+  - type: pserv
+    name: meme-coin-db
+    env: postgres
+    plan: free # Or starter for more resources, e.g., $7/month
+    postgres:
+      version: "15" # Specify PostgreSQL version
+    region: oregon # Or frankfurt, etc.
+    disk:
+      name: postgres-data
+      sizeGB: 10
+      mountPath: /var/lib/postgresql/data
+
+  # Flask Backend API
+  - type: web
+    name: meme-coin-api
+    env: python
+    plan: free # Or starter for more resources, e.g., $7/month
+    region: oregon # Or frankfurt, etc.
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT"
+    healthCheckPath: "/api/v1/health"
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11"
+      - key: DATABASE_URL
+        fromService:
+          type: pserv
+          name: meme-coin-db
+          property: connectionString
+      - key: FLASK_ENV
+        value: production
+      # Add other necessary environment variables here
+      # e.g., CMC_API_KEY, ETHERSCAN_API_KEY
+      - key: CMC_API_KEY
+        value: "532ba13e-9182-4d41-8c6e-f722d54364ec" # User provided this
+      - key: ETHERSCAN_API_KEY
+        value: "323SSP7W3JUPGTF8DYBPVQ6TS3Y4ARGGIU" # User provided this
+
+  # Background Worker for Data Collection & Processing
+  - type: worker
+    name: meme-coin-worker
+    env: python
+    plan: free # Or starter for more resources, e.g., $7/month
+    region: oregon # Or frankfurt, etc.
+    buildCommand: "pip install -r requirements.txt"
+    # You'll need a script that acts as an entry point for your worker
+    # For example, a script that checks for scheduled tasks or listens to a queue.
+    # This startCommand is a placeholder and needs to be adapted to your actual worker logic.
+    # e.g., python run_scheduled_tasks.py or a custom worker script
+    startCommand: "echo \"Worker starting... define your worker start command, e.g., python worker_script.py\" && sleep infinity"
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11"
+      - key: DATABASE_URL
+        fromService:
+          type: pserv
+          name: meme-coin-db
+          property: connectionString
+      - key: CMC_API_KEY
+        value: "532ba13e-9182-4d41-8c6e-f722d54364ec"
+      - key: ETHERSCAN_API_KEY
+        value: "323SSP7W3JUPGTF8DYBPVQ6TS3Y4ARGGIU"
+      # Add other necessary environment variables for your scripts
+
