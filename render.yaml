@@ -1,0 +1,50 @@
+databases:
+  # PostgreSQL Database
+  - name: meme-coin-db
+    plan: free # Or starter for more resources, e.g., $7/month. Free plan has 256MB RAM, 1GB Storage.
+    region: oregon # Or frankfurt, etc.
+    postgresMajorVersion: "15" # Specify PostgreSQL major version
+
+services:
+  # Flask Backend API
+  - type: web
+    name: meme-coin-api
+    env: python
+    plan: free # Or starter for more resources, e.g., $7/month
+    region: oregon # Or frankfurt, etc.
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn main:app --bind 0.0.0.0:$PORT"
+    healthCheckPath: "/api/v1/health"
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: meme-coin-db
+          property: connectionString
+      - key: FLASK_ENV
+        value: production
+      - key: CMC_API_KEY
+        value: "532ba13e-9182-4d41-8c6e-f722d54364ec"
+      - key: ETHERSCAN_API_KEY
+        value: "323SSP7W3JUPGTF8DYBPVQ6TS3Y4ARGGIU"
+
+  # Background Worker for Data Collection & Processing
+  - type: worker
+    name: meme-coin-worker
+    env: python
+    plan: free # Or starter for more resources, e.g., $7/month
+    region: oregon # Or frankfurt, etc.
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "echo \"Worker starting... define your worker start command, e.g., python worker_script.py\" && sleep infinity"
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: meme-coin-db
+          property: connectionString
+      - key: CMC_API_KEY
+        value: "532ba13e-9182-4d41-8c6e-f722d54364ec"
+      - key: ETHERSCAN_API_KEY
+        value: "323SSP7W3JUPGTF8DYBPVQ6TS3Y4ARGGIU"
